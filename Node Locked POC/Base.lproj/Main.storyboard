@@ -1,24 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Node_Locked_POC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Initial configuration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rK1-x5-QI7">
+                                <rect key="frame" x="0.0" y="64" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lincense status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJf-y4-kST">
+                                <rect key="frame" x="0.0" y="115" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CbT-oS-RF6">
+                                <rect key="frame" x="144" y="166" width="126" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Activate license"/>
+                                <connections>
+                                    <action selector="activateLicenseTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uxy-wu-XAJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYN-qb-21W">
+                                <rect key="frame" x="136" y="217" width="142" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Deactivate license"/>
+                                <connections>
+                                    <action selector="activateLicenseTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x1F-nb-073"/>
+                                    <action selector="deactivateLicenseTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RmZ-0A-r8d"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CbT-oS-RF6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="564-zw-4G3"/>
+                            <constraint firstItem="AYN-qb-21W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AW2-IA-0L8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OJf-y4-kST" secondAttribute="trailing" id="Dfc-Yz-S34"/>
+                            <constraint firstItem="OJf-y4-kST" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ev4-tz-6gP"/>
+                            <constraint firstItem="rK1-x5-QI7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fyg-d2-baZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rK1-x5-QI7" secondAttribute="trailing" id="GEx-D0-1YO"/>
+                            <constraint firstItem="OJf-y4-kST" firstAttribute="top" secondItem="rK1-x5-QI7" secondAttribute="bottom" constant="30" id="O0g-Aa-Mle"/>
+                            <constraint firstItem="AYN-qb-21W" firstAttribute="top" secondItem="CbT-oS-RF6" secondAttribute="bottom" constant="20" id="YhE-RW-3rv"/>
+                            <constraint firstItem="rK1-x5-QI7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ZJe-fM-E52"/>
+                            <constraint firstItem="CbT-oS-RF6" firstAttribute="top" secondItem="OJf-y4-kST" secondAttribute="bottom" constant="30" id="dnU-1D-fCh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lincenseStatusLabel" destination="OJf-y4-kST" id="jND-dI-duk"/>
+                        <outlet property="setupLabel" destination="rK1-x5-QI7" id="8ch-oK-9Kj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="129"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

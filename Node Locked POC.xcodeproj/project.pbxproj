@@ -13,7 +13,24 @@
 		6EF61EFC281718790068F5ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EF61EFA281718790068F5ED /* Main.storyboard */; };
 		6EF61EFE2817187A0068F5ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EF61EFD2817187A0068F5ED /* Assets.xcassets */; };
 		6EF61F012817187A0068F5ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EF61EFF2817187A0068F5ED /* LaunchScreen.storyboard */; };
+		6EF61F0B281718A20068F5ED /* LexActivator.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF61F092817189F0068F5ED /* LexActivator.xcframework */; };
+		6EF61F0C281718A20068F5ED /* LexActivator.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF61F092817189F0068F5ED /* LexActivator.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6EF61F0F28171A440068F5ED /* productdata.dat in Resources */ = {isa = PBXBuildFile; fileRef = 6EF61F0E28171A440068F5ED /* productdata.dat */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6EF61F0D281718A30068F5ED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6EF61F0C281718A20068F5ED /* LexActivator.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6EF61EF1281718790068F5ED /* Node Locked POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Node Locked POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +41,8 @@
 		6EF61EFD2817187A0068F5ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EF61F002817187A0068F5ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EF61F022817187A0068F5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EF61F092817189F0068F5ED /* LexActivator.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LexActivator.xcframework; sourceTree = "<group>"; };
+		6EF61F0E28171A440068F5ED /* productdata.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = productdata.dat; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EF61F0B281718A20068F5ED /* LexActivator.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +60,7 @@
 		6EF61EE8281718790068F5ED = {
 			isa = PBXGroup;
 			children = (
+				6EF61F08281718920068F5ED /* Frameworks */,
 				6EF61EF3281718790068F5ED /* Node Locked POC */,
 				6EF61EF2281718790068F5ED /* Products */,
 			);
@@ -56,6 +77,7 @@
 		6EF61EF3281718790068F5ED /* Node Locked POC */ = {
 			isa = PBXGroup;
 			children = (
+				6EF61F0E28171A440068F5ED /* productdata.dat */,
 				6EF61EF4281718790068F5ED /* AppDelegate.swift */,
 				6EF61EF6281718790068F5ED /* SceneDelegate.swift */,
 				6EF61EF8281718790068F5ED /* ViewController.swift */,
@@ -65,6 +87,14 @@
 				6EF61F022817187A0068F5ED /* Info.plist */,
 			);
 			path = "Node Locked POC";
+			sourceTree = "<group>";
+		};
+		6EF61F08281718920068F5ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EF61F092817189F0068F5ED /* LexActivator.xcframework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +107,7 @@
 				6EF61EED281718790068F5ED /* Sources */,
 				6EF61EEE281718790068F5ED /* Frameworks */,
 				6EF61EEF281718790068F5ED /* Resources */,
+				6EF61F0D281718A30068F5ED /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EF61F012817187A0068F5ED /* LaunchScreen.storyboard in Resources */,
+				6EF61F0F28171A440068F5ED /* productdata.dat in Resources */,
 				6EF61EFE2817187A0068F5ED /* Assets.xcassets in Resources */,
 				6EF61EFC281718790068F5ED /* Main.storyboard in Resources */,
 			);

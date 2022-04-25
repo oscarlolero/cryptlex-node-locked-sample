@@ -1,0 +1,6 @@
+framework module LexActivator {
+  umbrella header "LexActivator.h"
+
+  export *
+  module * { export * }
+}
